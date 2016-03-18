@@ -9,13 +9,13 @@ The resulting image can be run using [Docker](http://docker.io).
 
 Usage
 ---------------------
-To build a simple [nodejs-sample-app](https://github.com/openshift/sti-nodejs/tree/master/4.4/test/test-app) application
+To build a simple [nodejs-sample-app](https://github.com/getupcloud/sti-nodejs/tree/master/4.4/test/test-app) application
 using standalone [STI](https://github.com/openshift/source-to-image) and then run the
 resulting image with [Docker](http://docker.io) execute:
 
 *  **For CentOS based image**
     ```
-    $ s2i build https://github.com/openshift/sti-nodejs.git --context-dir=4.4/test/test-app/ openshift/nodejs-010-centos7 nodejs-sample-app
+    $ s2i build https://github.com/getupcloud/sti-nodejs.git --context-dir=4.4/test/test-app/ getupcloud/nodejs-44-centos7 nodejs-sample-app
     $ docker run -p 8080:8080 nodejs-sample-app
     ```
 
